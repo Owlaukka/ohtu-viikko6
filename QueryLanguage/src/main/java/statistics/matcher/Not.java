@@ -21,10 +21,7 @@ public class Not implements Matcher {
 
     @Override
     public boolean matches(Player p) {
-        if (matcher.matches(p)) {
-            return false;
-        }
-        return true;
+        return !matcher.matches(p);
     }
     
 }
